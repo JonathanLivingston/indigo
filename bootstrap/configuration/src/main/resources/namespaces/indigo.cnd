@@ -1,0 +1,22 @@
+<'hippo'='http://www.onehippo.org/jcr/hippo/nt/2.0.4'>
+<'hippogallery'='http://www.onehippo.org/jcr/hippogallery/nt/2.0'>
+<'hippostd'='http://www.onehippo.org/jcr/hippostd/nt/2.0'>
+<'hippostdpubwf'='http://www.onehippo.org/jcr/hippostdpubwf/nt/1.0'>
+<'hippotranslation'='http://www.onehippo.org/jcr/hippotranslation/nt/1.0'>
+<'indigo'='http://www.onehippo.org/indigo/nt/1.0'>
+
+[indigo:basedocument] > hippo:document, hippostd:publishableSummary, hippostdpubwf:document
+  orderable
+
+[indigo:bannerdocument] > indigo:basedocument, hippostd:relaxed, hippotranslation:translated
+  orderable
+
+[indigo:contentdocument] > indigo:basedocument, hippostd:relaxed, hippotranslation:translated
+  orderable
+
+[indigo:indeximageset] > hippogallery:imageset, hippogallery:relaxed
+  orderable
+
+[indigo:newsdocument] > indigo:basedocument, hippostd:relaxed, hippotranslation:translated
+  orderable
+
